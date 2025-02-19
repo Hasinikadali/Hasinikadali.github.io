@@ -124,7 +124,7 @@ function showForm() {
 }
 function showLogin() {
   let str = `
-  <div>z
+  <div>
       <h2>Login Form</h2>
       <div id='msg'></div>
       <p><input id="email" type="text"></p>
