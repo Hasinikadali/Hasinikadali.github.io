@@ -124,11 +124,11 @@ function showForm() {
 }
 function showLogin() {
   let str = `
-  <div>
+  <div>z
       <h2>Login Form</h2>
       <div id='msg'></div>
-      <p><input id="email" type="text" placeholder="Enter email"></p>
-      <p><input id="password" type="password" placeholder="Enter password"></p>
+      <p><input id="email" type="text"></p>
+      <p><input id="password" type="password"></p>
       <button onclick='chkUser()'>Log In</button>
       <p><button onclick='showForm()'>Create Account</button></p>
   </div>
