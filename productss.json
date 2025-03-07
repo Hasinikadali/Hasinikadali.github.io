@@ -1,44 +1,44 @@
 [
     {
         "id": 1,
-        "name": "Product 1",
-        "desc" : "This is description of the product",
-        "price": 34,
-        "url":"https://picsum.photos/id/1/300/300"
+        "name": "Amaranthus",
+        "desc": "Fresh and organic Amaranthus, rich in vitamins and minerals.",
+        "price": "₹34 per bunch",
+        "url": "ama.jpg"
     },
     {
         "id": 2,
-        "name": "Product 2",
-        "desc" : "This is description of the product",
-        "price": 40,
-        "url":"https://picsum.photos/id/2/300/300"
+        "name": "Beans",
+        "desc": "Organic green beans, rich in fiber and protein.",
+        "price": "₹40 per kg",
+        "url": "beans.webp"
     },
     {
         "id": 3,
-        "name": "Product 3",
-        "desc" : "This is description of the product",
-        "price": 50,
-        "url":"https://picsum.photos/id/3/300/300"
+        "name": "Brinjal",
+        "desc": "Farm-fresh brinjal, great for curries and fry dishes.",
+        "price": "₹50 per kg",
+        "url": "bri.webp"
     },
     {
         "id": 4,
-        "name": "Product 4",
-        "desc" : "This is description of the product",
-        "price": 20,
-        "url":"https://picsum.photos/id/4/300/300"
+        "name": "Spinach",
+        "desc": "Nutrient-dense spinach, ideal for soups and salads.",
+        "price": "₹20 per bunch",
+        "url": "spi.webp"
     },
     {
         "id": 5,
-        "name": "Product 5",
-        "desc" : "This is description of the product",
-        "price": 30,
-        "url":"https://picsum.photos/id/5/300/300"
+        "name": "Cauliflower",
+        "desc": "Fresh organic cauliflower, perfect for sabzi and stir-fries.",
+        "price": "₹30 per piece",
+        "url": "cau.webp"
     },
     {
         "id": 6,
-        "name": "Product 6",
-        "desc" : "This is description of the product",
-        "price": 40,
-        "url":"https://picsum.photos/id/6/300/300"
+        "name": "Bhendi (Okra)",
+        "desc": "Tender and organic okra, great for bhindi fry and curry.",
+        "price": "₹40 per kg",
+        "url": "ladi.jpg"
     }
 ]
