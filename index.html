@@ -6,6 +6,84 @@
   <title>Your Name</title>
   <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
   <link rel="stylesheet" href="assests/css/style.css" />
+  <style>
+     #projects {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* Styling for the project heading */
+        #projects h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Flex container for project boxes */
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Styling for each project box */
+        .project-box {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: calc(25% - 20px); /* Four boxes per row */
+            box-sizing: border-box;
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        /* Hover effect for project boxes */
+        .project-box:hover {
+            transform: scale(1.05);
+        }
+
+        /* Styling for project images */
+        .project-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Styling for the View Project button */
+        .view-project-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #5673C8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .view-project-btn:hover {
+            background-color: #3d5a99;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1024px) {
+            .project-box {
+                width: calc(33.33% - 20px); /* Three boxes per row */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .project-box {
+                width: calc(50% - 20px); /* Two boxes per row */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project-box {
+                width: calc(100% - 20px); /* One box per row */
+            }
+        }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -37,68 +115,72 @@
           </p>
 
           <button onclick="window.open('https://www.linkedin.com/in/hasini-kadali-64ab96303/', '_blank')">LinkedIn</button>
-          <button>Dowmload cv</button>
+          <a href="/HasiniKadali (2) (1).pdf" download>
+            <button>Download CV</button>
+          </a>          
         </div>
         <div class="box">
           <img src="/laptop.jpg" />
         </div>
       </div>
     </div>
-    <div id="projects" class="row" style="background-color: lightcoral">
+    <div id="projects">
       <h1>Projects</h1>
-      <div style="display: flex">
-        <div class="box">
-          <a href="p1.html">Project 1</a>
-          <p>
-            A South Indian restaurant offering traditional dishes like Appam, Vada, 
-            and Pesarattu Dosa, enhanced with organic masalas for authentic flavors.
-            The decor reflects South Indian heritage with wooden furniture, brass lamps, 
-            and Carnatic music, creating a warm ambiance. The site is simple, 
-            easy to navigate, and highlights the restaurant’s inviting atmosphere.
-          </p>
-        </div>
-        <div class="box">
-          <a href="mybank.html">Project 2</a>
-          <p>
-            A simple banking system where users can register, 
-            log in, deposit, withdraw, and transfer money in one interface. 
-            Built with HTML, CSS, and JavaScript for seamless transactions.
-          </p>
-        </div>
-        <div class="box">
-          <a href="index2.html">Project 3</a>
-          <p>
-            An e-commerce platform for ordering organic vegetables where users can browse products,
-             add items to the cart, and view the total amount before checkout. 
-             The site ensures a seamless shopping experience with an intuitive interface.
-          </p>
-        </div>
-        <div class="box">
-          <a href="project/index.html">Project 4</a>
-          <p>
-            A dynamic website featuring a Bootstrap-powered carousel to showcase various college events,
-             announcements, and activities. Users can scroll through event highlights with smooth transitions,
-              making it an engaging way to present important information.
-          </p>
-        </div>        
-        <div class="box">
-          <a href="index1.html">Project 5</a>
-          <p>
-            A dynamic social media platform where users can create an account,
-             log in, and explore various features. Users can view and interact with posts,
-              browse albums, check their to-dos, and manage their content efficiently. 
-              The platform provides an engaging experience with a user-friendly interface.
-          </p>
-        </div>
-        <div class="box">
-          <a href="/react-store-b build/index.html">Project 6</a>
-          <p>
-            A dynamic social media platform where users can create an account,
-             log in, and explore various features. Users can view and interact with posts,
-              browse albums, check their to-dos, and manage their content efficiently. 
-              The platform rovides an engaging experience with a user-friendly interface.
-          </p>
-        </div>
+      <div class="project-container">
+          <div class="project-box">
+              <img src="/Screenshot 2025-03-26 112009.png" alt="Project 1">
+              <h3>Project 1</h3>
+              <p>
+                  A South Indian restaurant offering traditional dishes like Appam, Vada, 
+                  and Pesarattu Dosa, enhanced with organic masalas for authentic flavors.
+              </p>
+              <a href="p1.html" class="view-project-btn">View Project</a>
+          </div>
+          <div class="project-box">
+              <img src="/Screenshot 2025-03-28 145910.png" alt="Project 2">
+              <h3>Project 2</h3>
+              <p>
+                  A simple banking system where users can register, 
+                  log in, deposit, withdraw, and transfer money in one interface.
+              </p>
+              <a href="mybank.html" class="view-project-btn">View Project</a>
+          </div>
+          <div class="project-box">
+              <img src="/Screenshot 2025-03-26 112031.png" alt="Project 3">
+              <h3>Project 3</h3>
+              <p>
+                  An e-commerce platform for ordering organic vegetables where users can browse products,
+                  add items to the cart, and view the total amount before checkout.
+              </p>
+              <a href="index2.html" class="view-project-btn">View Project</a>
+          </div>
+          <div class="project-box">
+              <img src="/Screenshot 2025-03-26 112049.png" alt="Project 4">
+              <h3>Project 4</h3>
+              <p>
+                  Developed a dynamic website using Bootstrap to promote 
+                  organic farming practices, featuring an interactive carousel.
+              </p>
+              <a href="project/index.html" class="view-project-btn">View Project</a>
+          </div>
+          <div class="project-box">
+              <img src="/Screenshot 2025-03-28 145931.png" alt="Project 5">
+              <h3>Project 5</h3>
+              <p>
+                  A dynamic social media platform where users can create an account,
+                  log in, and explore various features including posts and albums.
+              </p>
+              <a href="index1.html" class="view-project-btn">View Project</a>
+          </div>
+          <div class="project-box">
+              <img src="path/to/project6-image.jpg" alt="Project 6">
+              <h3>Project 6</h3>
+              <p>
+                  A dynamic social media platform where users can manage their content efficiently,
+                  providing an engaging experience with a user-friendly interface.
+              </p>
+              <a href="#" class="view-project-btn">View Project</a>
+          </div>
       </div>
     </div>
     <div id="services" class="row" style="background-color: lightblue">
